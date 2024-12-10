@@ -165,7 +165,7 @@ def manually_fill():
             def create_csv():
                 import csv
                 cursor.execute("select * from " + DB_table_name + ";")
-                csv_name = 'C:/Users/mdzai/P2-Attendance-Management-System-using-Face-Recognition/Attendance/Manually Attendance/'+DB_table_name+'.csv'
+                csv_name = 'C:/Users/mdzai/Attendance_Management_system_using_face_recognition/Attendance/Manually Attendance/'+DB_table_name+'.csv'
                 with open(csv_name, "w") as csv_file:
                     csv_writer = csv.writer(csv_file)
                     csv_writer.writerow(
